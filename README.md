@@ -28,7 +28,7 @@ The **Intel 8085** is an 8-bit microprocessor based on the Von Neumann architect
 - **Branching instructions**: such as `JMP`, `CALL`, `RET`, `RNZ`, `JC`, etc.
 - **Delay loops**: since 8085 lacks timers, nested loops are used to simulate delays
 
-This clock uses a **pure software-based delay** and **binary counters** (not BCD), and increments registers manually to simulate time.
+This clock uses a **software-based delay** and **BCD (Binary-Coded Decimal)** format to store time values in `B`, `C`, and `D` registers.
 
 ---
 
@@ -140,15 +140,5 @@ The Intel 8086 is often used with an operating system like MS-DOS or BIOS firmwa
 ## ✅ Features
 
 * Simple and clean structure
-* No reliance on BCD or complex math
 * Can run on any basic 8085 emulator
 * Easily modifiable for 12-hour or 24-hour format
-
----
-
-## 📌 To Do
-
-* [ ] Add BCD support for display use
-* [ ] Add memory-mapped output for seven-segment simulation
-
----
